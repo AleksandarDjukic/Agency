@@ -6,18 +6,20 @@
     <script src="https://kit.fontawesome.com/9af3b03b62.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="vendors/css/fluid.css">
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/media-query.css">
 </head>
 <body>
+    <div id="home"></div>
     <header>
         <nav>
             <img src="resources/imgs/digisolve-logo.png" alt="Digisolve logo" class="logo">
             <ul class="main-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
         <div class="header-box">
@@ -29,15 +31,15 @@
         </div>
 
     </header>
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="row">
-            <div class="col span_1_of_2 about-box">
+            <div class="col span_1_of_2 about-box js-about-box">
                 <h2 class="about-heading">A Digital Agency Focused On Growing your Online Presence</h2>
                 <p class="about-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non pretium leo.</p>
                 <p class="about-para">Proin aliquam lorem eu enim faucibus sodales. Praesent accumsan luctus ex ut condimentum. Aliquam vitae sem sed nibh volutpat fringilla eu sed tortor. Quisque dignissim felis quis maximus venenatis.</p>
                 <a href="#" class="btn btn-ghost">Read More</a>
             </div>
-            <div class="col span_1_of_2 about-box">
+            <div class="col span_1_of_2 about-box js-about-box">
                 <img src="resources/imgs/about-img.jpg" alt="Digisolve app" class="laptop-image">
             </div>
         </div>
@@ -80,25 +82,25 @@
             <h3 class="section-sub-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
         </div>
         <div class="row">
-            <div class="col span_1_of_4 service-box">
+            <div class="col span_1_of_4 service-box js-service-box">
                 <i class="fas fa-tags big-icon"></i>
                 <h4 class="service-heading">Branding</h4>
                 <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#" class="service-link">Read more...</a>
             </div>
-            <div class="col span_1_of_4 service-box">
+            <div class="col span_1_of_4 service-box js-service-box">
                 <i class="fas fa-pen-alt big-icon"></i>
                 <h4 class="service-heading">Content</h4>
                 <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#" class="service-link">Read more...</a>
             </div>
-            <div class="col span_1_of_4 service-box">
+            <div class="col span_1_of_4 service-box js-service-box">
                 <i class="fas fa-funnel-dollar big-icon"></i>
                 <h4 class="service-heading">Marketing</h4>
                 <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#" class="service-link">Read more...</a>
             </div>
-            <div class="col span_1_of_4 service-box">
+            <div class="col span_1_of_4 service-box js-service-box">
                 <i class="fas fa-code big-icon"></i>
                 <h4 class="service-heading">Web Design</h4>
                 <p class="service-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -207,7 +209,7 @@
                 </div>
             </div>
             <div class="col span_1_of_3">
-                <div class="package-box">
+                <div class="package-box js-package-box">
                     <div>
                         <h4 class="package-heading">Enterprice</h4>
                         <p class="package-price">$ 4,999 <span>3 months</span></p>
@@ -229,7 +231,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="row">
             <h2 class="contact-heading">We're happy to hear from you.</h2>
         </div>
@@ -303,5 +305,8 @@
             You can feel free to use it and customize it to make your own webpages</p>
         </div>
     </footer>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="resources/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 </body>
 </html>
